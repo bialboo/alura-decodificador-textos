@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+
+:root {
+    --cor-destaque: rgb(245, 233, 244);
+    --cor-botao: #705c6e;
+    --cor-borda: #07070A;
+    --cor-do-texto: #ffffff;
+    --cor-hover: #edcbeb;
+
+    --fonte-Inter: "Inter", sans-serif;
+    --fonte-Archivo: "Archivo Black", sans-serif;
+ 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: var(--fonte-Inter);
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--cor-destaque);
+}
+
+header {
+  padding: 3vh 12vw;
+}
+
+.cabecalho{
+    font-family: var(--fonte-Archivo);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.9em;
+    color: var(--cor-botao);
+}
+.principal {
+  display: flex;
+  align-items: center;
+  box-sizing: content-box;
+  grid-template-columns: 2fr 1.2fr;
+  gap: 2rem;
+  max-width: 1440px;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 2vh 3vw 8vh 14vh;
+  height: 85vh;
+}
+
+.input-text {
+  resize: none;
+  border: none;
+  border-radius: 16px;
+  outline: none;
+  width: 90%;
+  background-color: var(--cor-botao);
+  font-family: var(--fonte-Archivo);
+  font-weight: 800;
+  font-size: 32px;
+  color: var(--cor-do-texto);
+  height: 100%;
+  padding: 25px;
+}
+
+.container-btt {
+  display: flex;
+  padding: 10px 0;
+  gap: 3%;
+}
+
+.btt-criptografar {
+  width: 337px;
+  height: 67px;
+  border-style: hidden;
+  border-radius: 24px;
+  font-family: var(--fonte-Inter);
+  font-weight: 450;
+  cursor: pointer;
+  border: solid var(--cor-borda) 1px;
+  background-color: var(--cor-botao);
+  color: var(--cor-do-texto);
+}
+
+.btt-criptografar:hover {
+    background-color: var(--cor-hover);
+    color: var(--cor-borda);
+  }
+
+.btt-descriptografar {
+  width: 337px;
+  height: 67px;
+  border-style: hidden;
+  border-radius: 24px;
+  font-weight: 450;
+  cursor: pointer;
+  border: solid var(--cor-borda) 1px;
+  background-color: var(--cor-hover);
+  color: var(--cor-borda);
+}
+
+.btt-descriptografar:hover {
+    background-color: var(--cor-botao);
+    color: var(--cor-do-texto);
+  }
+
+.btt-acao-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 86%;
+  width: 80%;
+}
+
+.btt-copiar {
+  width: 337px;
+  height: 67px;
+  border-style: hidden;
+  border-radius: 24px;
+  font-weight: 450;
+  cursor: pointer;
+  border: solid var(--cor-borda) 1px;
+  background-color: var(--cor-botao);
+  color: var(--cor-do-texto);
+}
+
+.btt-copiar:hover {
+  background-color: var(--cor-hover);
+  color: var(--cor-borda);
+}
+
+.display-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 32px;
+  background-color: var(--cor-hover);
+  border: solid var(--cor-borda) 1px;
+  padding: 100px 25px;
+  width: 32%;
+  box-sizing: border-box;
+  height: 90vh;
+  position: absolute;
+  bottom: 5vh;
+  left: 72vw;
+  align-items: center;
+  width: 25vw;
+}
+
+.resultado-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+.mensagem {
+  padding: 25px;
+  word-break: break-all;
+  text-align: center;
+  width: 100%;
+  height: 83%;
+  border: none;
+  resize: none;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 22.5px;
+  background-color: var(--cor-destaque);
+}
+
+.footer__text {
+  text-align: center;
+  font-weight: 250;
+  color: var(--cor-borda);
+}
+
+
+@media (max-width: 780px) {
+  .container-principal {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .display-texto {
+    width: 90%;
+    height: 90%;
+  }
+
+  .imagem-conteudo {
+    display: none;
+  }
+}  
